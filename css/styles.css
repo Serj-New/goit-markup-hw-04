@@ -66,6 +66,7 @@ section {
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-wrap {
@@ -160,15 +161,13 @@ section {
 /* HERO */
 
 .hero {
+    max-width: 1440px;
+    margin: 0 auto;
     background: #2E2F42;
     padding: 188px 0;
-    background-image: 
-    linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
     background-position: 50% 50%;
-    background-size: 1440px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -198,12 +197,12 @@ section {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background: #404BBF;
+    background-color: #404BBF;
 }
 
 /* FEATURE */
@@ -228,7 +227,10 @@ section {
 }
 
 .feature-list-icon {
-    padding: 24px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
     margin-bottom: 8px;
     background: #F4F4FD;
     border-radius: 4px;
@@ -279,7 +281,7 @@ section {
 }
 
 .team-list-descr {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .team-list-name {
@@ -296,7 +298,8 @@ section {
 
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 
 .social-item {

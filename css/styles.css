@@ -413,6 +413,7 @@ section {
 
 .footer-wrap {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-legal {

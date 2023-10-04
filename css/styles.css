@@ -451,7 +451,3 @@ section {
 .footer-social .social-link:focus {
     background-color: #31D0AA;
 }
-
-.footer-social .social-item:not(:last-child) {
-    margin-right: 16px;
-}
